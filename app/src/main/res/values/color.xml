@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#FF087ADA</color>
+    <color name="ColorPrimaryDark">#FF0873CC</color>
+    <color name="tabsScrollColor">#ffffff</color>
+    <color name="textColorPrimary">#ff656565</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#02acfa</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <!--Rating bar colors-->
+    <color name="duskYellow">#e4da57</color>
+    <color name="lightGrey">#d9d7d7</color>
+</resources>

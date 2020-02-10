@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFAFA"
+    android:orientation="vertical"
+    tools:context="com.roomiegh.roomie.activities.browseActivities.ByLocation"
+    >
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ProgressBar
+            android:id="@+id/pbLocations"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/tvLocationsUnavailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/locations_unavailable"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textAlignment="center"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lvLocationHostels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ProgressBar
+            android:id="@+id/pbLocationHostels"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tvNothingToShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nothing_to_show"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

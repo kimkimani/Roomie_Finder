@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.roomiegh.roomie">
+
+    <uses-permission android:name="ANDROID.PERMISSION.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/roomie_app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.LandingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:label="@string/title_activity_reg_screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignInActivity"
+            android:label="@string/title_activity_sign_in_screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.myProfileActivities.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RoomsListActivity"
+            android:label="@string/title_activity_rooms_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.browseActivities.ByName"
+            android:label="@string/title_activity_announcements"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.browseActivities.ByLocation"
+            android:label="@string/title_activity_by_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.browseActivities.ByPrice"
+            android:label="@string/title_activity_news"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.browseActivities.ByType"
+            android:label="@string/title_activity_recent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.browseActivities.ReportAProblem"
+            android:label="@string/title_activity_report_aproblem"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activities.ViewRoomActivity"
+            android:label="@string/title_activity_view_room"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.HostelDetailsActivity" />
+        <activity android:name=".activities.BookingSuccessActivity"></activity>
+    </application>
+
+</manifest>

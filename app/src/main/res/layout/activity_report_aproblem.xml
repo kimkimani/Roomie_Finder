@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                 tools:context="com.roomiegh.roomie.activities.browseActivities.ReportAProblem">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etReportSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:hint="SUBJECT"
+        android:textColor="#a8000000"
+        android:textColorHint="#755a5a5a"
+        android:textCursorDrawable="@null"/>
+    <LinearLayout android:id="@+id/llReportButtons"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+        <Button
+            android:id="@+id/btReportCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="#ffffff" android:clickable="true"/>
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"/>
+        <Button
+            android:id="@+id/btReportSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textColor="#ffffff" android:clickable="true"/>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/llReportButtons"
+        android:layout_below="@id/etReportSubject"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="Your text here..."
+            android:textColor="#a8000000"
+            android:textColorHint="#755a5a5a"
+            android:textCursorDrawable="@null"/>
+    </ScrollView>
+</RelativeLayout>

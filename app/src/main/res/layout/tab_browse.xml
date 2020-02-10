@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="#ccc">
+
+    <Button
+        android:id="@+id/btBrowseName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="By Name"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:background="#fcfcfc"
+        android:layout_margin="4dp"
+        android:textColor="#555"/>
+
+    <Button
+        android:id="@+id/btBrowseLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="By Location"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:textColor="#555"
+        android:background="#fcfcfc"
+        android:layout_margin="4dp"/>
+    <Button
+        android:id="@+id/btBrowsePrice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="By Price"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:textColor="#555"
+        android:background="#fcfcfc"
+        android:layout_margin="4dp"/>
+    <Button
+        android:id="@+id/btBrowseType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="By Room Type"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:textColor="#555"
+        android:background="#fcfcfc"
+        android:layout_margin="4dp"/>
+
+</LinearLayout>

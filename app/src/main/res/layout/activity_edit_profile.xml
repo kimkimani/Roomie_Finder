@@ -1,0 +1,219 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/pbUploadingProfileData"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <!-- TODO: Update blank fragment layout -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivEditProfilePic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_account_circle_gray"
+                        android:adjustViewBounds="true"
+                        android:paddingLeft="60dp"
+                        android:paddingStart="60dp"
+                        android:paddingRight="60dp"
+                        android:paddingEnd="60dp"/>
+                    <ProgressBar
+                        android:id="@+id/pbUploadingProfilePic"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+                    <EditText
+                        android:id="@+id/etRegFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:hint="*First Name"
+                        android:inputType="textPersonName"
+                        android:textSize="20sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/etRegLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp"
+                        android:hint="*Last Name"
+                        android:inputType="textPersonName"
+                        android:textSize="20sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:id="@+id/tvRegGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="*Gender:"
+                            android:textSize="20sp"/>
+
+                        <CheckBox
+                            android:id="@+id/cbRegMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tvRegGender"
+                            android:checked="false"
+                            android:text="Male"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/cbRegFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/cbRegMale"
+                            android:checked="false"
+                            android:text="Female"
+                            />
+                        <!--/RadioGroup-->
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/etEditProfilePhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="*Phone"
+                        android:inputType="phone"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="20sp"
+                        android:maxLength="10"/>
+
+                    <EditText
+                        android:id="@+id/etEditProfileEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/etEditProfileProgramme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="*Programme"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp"
+                        android:inputType="textPersonName"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*Year:"
+                            android:textSize="20sp" />
+                        <Spinner
+                            android:id="@+id/spProfileYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textSize="20sp"
+                            android:drawSelectorOnTop="true"
+                            android:layout_gravity="center_horizontal"/>
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/etEditProfileGuardName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Next of Kin"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp"
+                        android:inputType="textPersonName"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/etEditProfileGuardPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Next of Kin's Contact"
+                        android:inputType="phone"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="20sp"
+                        android:maxLength="10"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <Button
+                        android:id="@+id/btEditProfileCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Cancel"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:id="@+id/btEditProfileSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Save"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/myBeautifyingSpace"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</FrameLayout>
